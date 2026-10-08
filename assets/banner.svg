@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" role="img" aria-label="ink-wash animated landscape">
+  <!-- 远山 -->
+  <path d="M0,150 L120,90 L260,150 L400,100 L560,160 L700,110 L860,160 L1000,120 L1200,170 L1200,300 L0,300 Z" fill="#7c8698" opacity="0.30">
+    <animate attributeName="opacity" values="0.28;0.40;0.28" dur="9s" repeatCount="indefinite"/>
+  </path>
+  <!-- 中山 -->
+  <path d="M0,190 L180,120 L340,190 L520,130 L720,200 L900,140 L1080,200 L1200,160 L1200,300 L0,300 Z" fill="#4d5563" opacity="0.45">
+    <animate attributeName="opacity" values="0.42;0.50;0.42" dur="11s" repeatCount="indefinite"/>
+  </path>
+  <!-- 近山 -->
+  <path d="M0,240 L220,170 L420,240 L640,180 L880,250 L1080,200 L1200,240 L1200,300 L0,300 Z" fill="#23272f" opacity="0.85"/>
+  <!-- 云雾（漂移） -->
+  <g opacity="0.16" fill="#e8ecf2">
+    <ellipse cx="200" cy="180" rx="180" ry="26">
+      <animateTransform attributeName="transform" type="translate" values="-150 0; 170 0; -150 0" dur="26s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="920" cy="215" rx="230" ry="30">
+      <animateTransform attributeName="transform" type="translate" values="140 0; -200 0; 140 0" dur="34s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="560" cy="130" rx="150" ry="18" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" values="-90 0; 110 0; -90 0" dur="40s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  <!-- 水面波纹 -->
+  <g stroke="#39414f" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M120,258 h150">
+      <animate attributeName="opacity" values="0.35;0.08;0.35" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M560,270 h180">
+      <animate attributeName="opacity" values="0.08;0.35;0.08" dur="6.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M950,264 h130">
+      <animate attributeName="opacity" values="0.30;0.06;0.30" dur="7.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <!-- 小舟（摇曳） -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-2 600 256; 2.2 600 256; -2 600 256" dur="5.2s" repeatCount="indefinite"/>
+    <path d="M540,250 Q600,263 660,250 L646,261 Q600,270 554,261 Z" fill="#151a21"/>
+    <path d="M588,250 L588,222 L604,250 Z" fill="#151a21" opacity="0.9"/>
+    <path d="M594,236 q4,-6 9,-2" stroke="#151a21" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- 飞鸟 -->
+  <g stroke="#2b303a" stroke-width="2.5" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M300,70 q10,-8 20,0 q10,-8 20,0"/>
+    <path d="M368,92 q8,-7 16,0 q8,-7 16,0"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="-60 8; 420 -10; 900 4" dur="28s" repeatCount="indefinite"/>
+      <path d="M210,58 q10,-8 20,0 q10,-8 20,0"/>
+    </g>
+  </g>
+  <!-- 印章 -->
+  <g transform="translate(1104,30) rotate(-4)">
+    <rect width="48" height="48" rx="6" fill="#b3352c"/>
+    <text x="24" y="36" font-family="'Noto Serif SC','SimSun',serif" font-size="30" fill="#fff5ef" text-anchor="middle">動</text>
+    <animate attributeName="opacity" values="1;1" dur="1s" repeatCount="indefinite"/>
+  </g>
+</svg>
